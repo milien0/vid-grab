@@ -1,0 +1,6 @@
+.venv/
+.venv-upstream/
+downloads/
+*.part
+*.ytdl
+cookies.txt

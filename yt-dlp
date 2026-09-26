@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Runs the grqz/yt-dlp fork installed by setup.sh.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+export PATH="$HOME/.deno/bin:$PATH"
+exec "$DIR/.venv/bin/yt-dlp" "$@"

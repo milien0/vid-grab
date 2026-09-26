@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Runs upstream yt-dlp installed by `setup.sh --with-upstream`.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+export PATH="$HOME/.deno/bin:$PATH"
+exec "$DIR/.venv-upstream/bin/yt-dlp" "$@"
